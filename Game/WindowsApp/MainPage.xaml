@@ -7,5 +7,25 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"/>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="73*"/>
+            <RowDefinition Height="52*"/>
+        </Grid.RowDefinitions>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="696,354,0,0" VerticalAlignment="Top" Height="6" Width="0" Click="Button_Click_1" RenderTransformOrigin="4.021,3.626">
+            <Button.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Button.RenderTransform>
+        </Button>
+        <Button Content="START" HorizontalAlignment="Left" Margin="494,300,0,0" VerticalAlignment="Top" Height="308" Width="520" Click="Button_Click_2" Grid.RowSpan="2" FontFamily="Microsoft Sans Serif" FontWeight="Bold" FontSize="48"/>
+        <TextBlock HorizontalAlignment="Left" Margin="494,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="96" Width="520" FontFamily="Microsoft Sans Serif" FontSize="72">
+            <Run FontStyle="Italic" Text="SPELNAAM"/>
+            <LineBreak/>
+            <Run/>
+            <LineBreak/>
+            <Run/>
+        </TextBlock>
+        <Image x:Name="___" HorizontalAlignment="Left" Height="100" Margin="434,390,0,0" VerticalAlignment="Top" Width="100"/>
+    </Grid>
 </Page>
