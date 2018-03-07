@@ -9,9 +9,9 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{ThemeResource AccentButtonBackground}">
         <Button x:Name="SpinnerButton" Margin="186,183,0,231">
-            <Image HorizontalAlignment="Left" Height="300"  VerticalAlignment="Top" Width="300" Source="Assets/Square150x150Logo.png"/>
+            <Image HorizontalAlignment="Left" Height="183"  VerticalAlignment="Top" Width="183" Source="Assets/cirkelspinner.png"/>
         </Button>
     </Grid>
 </Page>

@@ -7,7 +7,9 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    <Grid Background="{ThemeResource AccentButtonBackground}">
+        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Height="76" Width="309" Margin="600,808,0,0" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Vraag:" VerticalAlignment="Top" Margin="10,33,0,0" Height="45" Width="114" SelectionChanged="TextBlock_SelectionChanged"/>
+        <TextBox HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Margin="129,33,0,0" Height="290" Width="1172" TextChanged="TextBox_TextChanged"/>
     </Grid>
 </Page>

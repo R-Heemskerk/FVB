@@ -6,9 +6,18 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    <Page.Resources>
+        <Color x:Key="Color1">#FF1A1A1A</Color>
+    </Page.Resources>
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF003AFF" Offset="0"/>
+                <GradientStop Color="#FFBDCACB" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
         <Grid.RowDefinitions>
             <RowDefinition Height="73*"/>
             <RowDefinition Height="52*"/>
@@ -26,6 +35,5 @@
             <LineBreak/>
             <Run/>
         </TextBlock>
-        <Image x:Name="___" HorizontalAlignment="Left" Height="100" Margin="434,390,0,0" VerticalAlignment="Top" Width="100"/>
     </Grid>
 </Page>

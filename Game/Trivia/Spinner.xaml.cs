@@ -27,7 +27,7 @@ namespace App
         public Spinner()
         {
             this.InitializeComponent();
-            var animation = SpinnerButton.Rotate(value: 3600f, centerX: 150, centerY: 150, duration: 10000, delay: 200, easingType: EasingType.Circle);
+            var animation = SpinnerButton.Rotate(value: 3600f, centerX: 92, centerY: 92, duration: 10000, delay: 200, easingType: EasingType.Circle);
             animation.Start();
         }
     }
