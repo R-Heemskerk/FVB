@@ -30,5 +30,10 @@ namespace App
             var animation = SpinnerButton.Rotate(value: 3600f, centerX: 92, centerY: 92, duration: 10000, delay: 200, easingType: EasingType.Circle);
             animation.Start();
         }
+
+        private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(VraagPagina));
+        }
     }
 }

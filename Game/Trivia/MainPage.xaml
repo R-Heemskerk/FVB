@@ -27,7 +27,6 @@
                 <CompositeTransform ScaleY="-1"/>
             </Button.RenderTransform>
         </Button>
-        <Button Content="START" HorizontalAlignment="Left" Margin="494,300,0,0" VerticalAlignment="Top" Height="308" Width="520" Click="Button_Click_2" Grid.RowSpan="2" FontFamily="Microsoft Sans Serif" FontWeight="Bold" FontSize="48"/>
         <TextBlock HorizontalAlignment="Left" Margin="494,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="96" Width="520" FontFamily="Microsoft Sans Serif" FontSize="72">
             <Run FontStyle="Italic" Text="SPELNAAM"/>
             <LineBreak/>
@@ -35,5 +34,12 @@
             <LineBreak/>
             <Run/>
         </TextBlock>
+        
+        <HyperlinkButton Content="START SPINNER"
+                         Click="HyperlinkButton_Click"
+                         HorizontalAlignment="Left"
+                         Margin="500,300,0,0"
+                         VerticalAlignment="Top"
+                         />
     </Grid>
 </Page>
