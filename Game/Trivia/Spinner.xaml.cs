@@ -17,23 +17,45 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace App
+namespace Trivia
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
     public sealed partial class Spinner : Page
     {
+        Random random = new Random();
+        int randomrotation;
+
         public Spinner()
         {
             this.InitializeComponent();
-            var animation = SpinnerButton.Rotate(value: 3600f, centerX: 92, centerY: 92, duration: 10000, delay: 200, easingType: EasingType.Circle);
+            randomrotation = random.Next(360);
+            var animation = SpinnerButton.Rotate(value: 3600f + randomrotation, centerX: 92, centerY: 92, duration: 10000, delay: 200, easingType: EasingType.Circle);
             animation.Start();
+            animation.Completed += Animation_Completed;
         }
 
-        private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
+        private void Animation_Completed(object sender, AnimationSetCompletedEventArgs e)
         {
-            this.Frame.Navigate(typeof(VraagPagina));
+            if (randomrotation >= 0 && randomrotation < 120)
+            {
+                this.Frame.Navigate(typeof(VraagPaginaAardrijkskunde));
+            }
+            else if (randomrotation >= 120 && randomrotation < 240)
+            {
+                this.Frame.Navigate(typeof(VraagPaginaNatuur));
+            }
+            else
+            {
+                this.Frame.Navigate(typeof(VraagPaginaGeschiedenis));
+            }
         }
     }
 }
+  
+
+        //0 <= x < 120 -> aardrijkskunde
+        //120 <= x < 240 -> natuur
+        //240 <= x < 360 -> geschiedenis
+        

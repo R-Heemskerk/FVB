@@ -1,10 +1,10 @@
 ﻿<Page
-    x:Class="App.Spinner"
+    x:Class="Trivia.Spinner"
     xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
     xmlns:behaviors="using:Microsoft.Toolkit.Uwp.UI.Animations.Behaviors"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:App"
+    xmlns:local="using:Trivia"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
@@ -13,8 +13,9 @@
         <Button x:Name="SpinnerButton" Margin="186,183,0,231">
             <Image HorizontalAlignment="Left" Height="183"  VerticalAlignment="Top" Width="183" Source="Assets/cirkelspinner.png"/>
         </Button>
-        <HyperlinkButton Content="Vraag"
-                         Click="HyperlinkButton_Click"
-                         HorizontalAlignment="Center"/>
+        <Image x:Name="___pijl_png_" HorizontalAlignment="Left" Height="91" Margin="233,90,0,0" VerticalAlignment="Top" Width="100" Source="Assets/pijl.png">
+            
+        </Image>
+
     </Grid>
 </Page>
