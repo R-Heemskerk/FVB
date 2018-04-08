@@ -31,7 +31,36 @@ namespace Trivia
             VraagBox.Text = "Inhoud van je vraag";
 
         }
-              static void main()
+
+        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            int result = 0;
+            int a = 1;
+        }
+
+
+        private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Spinner));
+        }
+        // Deze knop dient als returnbutton om terug te gaan naar de spinner
+
+        private void Checkbutton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void TextBlock_SelectionChanged_1(object sender, RoutedEventArgs e)
         {
             next:
             Random question = new Random();
@@ -61,33 +90,21 @@ namespace Trivia
             }
             else
                 Console.WriteLine("It's False \n*Please Try Again.");
-
             Console.ReadLine();
         }
+        //Dit zijn de vragen met de antwoorden.
+        //Dit zorgen ervoor dat de rvagen en antwoorden veranderen.
         
-        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+    private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
 
         }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void RadioButton_Checked_1(object sender, RoutedEventArgs e)
         {
 
         }
+        //Dit dient om een antwoordt te kunnen kiezen
+    }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            int result = 0;
-            int a = 1;
-        }
-
-       
-        private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(Spinner));
-        }
-        // Deze knop dient als returnbutton om terug te gaan naar de spinner
+} 
         
-    } 
-      
-}

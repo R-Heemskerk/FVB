@@ -18,10 +18,11 @@
             <Run Text="Waar was Anne Frank in ondergedoken?">
                 </Run>
         </TextBlock>
-        <Button Content="Geschiedenis " HorizontalAlignment="Left" Margin="665,51,0,0" VerticalAlignment="Top" Height="82" Width="267" FontSize="36"/>
         <Image HorizontalAlignment="Left" Height="100" Margin="915,384,0,0" VerticalAlignment="Top" Width="115"/>
         <RadioButton Content="In het achterhuis" HorizontalAlignment="Left" Margin="504,613,0,0" VerticalAlignment="Top" Width="444" FontSize="30"/>
         <RadioButton Content="In een concentratiekamp" HorizontalAlignment="Left" Margin="504,483,0,0" VerticalAlignment="Top" Width="444" FontSize="30"/>
-        <Button Content="Check" HorizontalAlignment="Left" Margin="1098,779,0,0" VerticalAlignment="Top" Height="67" Width="209" FontSize="36" RenderTransformOrigin="0.505,0.56"/>
+        <Button Content="Check" HorizontalAlignment="Left" Margin="314,791,0,0" VerticalAlignment="Top" Height="67" Width="209" FontSize="36" RenderTransformOrigin="0.505,0.56"/>
+        <Button Content="Volgende" HorizontalAlignment="Left" Margin="1034,791,0,0" VerticalAlignment="Top" Height="67" Width="199" FontSize="36"/>
+        <TextBlock HorizontalAlignment="Left" Margin="614,106,0,0" TextWrapping="Wrap" Text="Geschiedenis" VerticalAlignment="Top" Height="72" Width="288" FontSize="48"/>
     </Grid>
 </Page>
