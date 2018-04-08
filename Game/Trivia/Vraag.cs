@@ -12,4 +12,5 @@ namespace Trivia
         string antwoord;
 
     }
+    // Bij elke vraag hoort een apart antwoord
 }

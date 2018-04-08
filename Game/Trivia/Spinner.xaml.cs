@@ -35,6 +35,7 @@ namespace Trivia
             animation.Start();
             animation.Completed += Animation_Completed;
         }
+        // De code waarmee de afbeelding die de spinner aangeeft een bepaald aantal rondjes draait, zodat deze niet elke keer op hetzelfde stopt en er dus elke keer een andere vraag komt
 
         private void Animation_Completed(object sender, AnimationSetCompletedEventArgs e)
         {
@@ -51,6 +52,7 @@ namespace Trivia
                 this.Frame.Navigate(typeof(VraagPaginaGeschiedenis));
             }
         }
+        // Bij elke aparte categorie horen bepaalde graden
     }
 }
   

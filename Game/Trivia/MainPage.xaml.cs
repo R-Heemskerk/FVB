@@ -36,7 +36,7 @@ namespace Trivia
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            
+           
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
@@ -48,5 +48,6 @@ namespace Trivia
         {
             this.Frame.Navigate(typeof(Spinner));
         }
+        // Deze knop dient als startknop voor het verder gaan naar de volgende pagina om zo de spinner te starten
     }
 }

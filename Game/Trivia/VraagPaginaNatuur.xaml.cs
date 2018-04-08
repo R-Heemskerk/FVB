@@ -50,5 +50,6 @@ namespace Trivia
         {
 
         }
+        // Deze knop dient als returnbutton om terug te gaan naar de spinner
     }
 }

@@ -27,14 +27,14 @@
                 <CompositeTransform ScaleY="-1"/>
             </Button.RenderTransform>
         </Button>
-        <TextBlock HorizontalAlignment="Left" Margin="494,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="96" Width="520" FontFamily="Microsoft Sans Serif" FontSize="72">
-            <Run FontStyle="Italic" Text="SPELNAAM"/>
+        <TextBlock HorizontalAlignment="Left" Margin="605,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="96" Width="234" FontFamily="Microsoft Sans Serif" FontSize="72">
+            <Run FontStyle="Italic" Text="TRI4U"/>
             <LineBreak/>
             <Run/>
             <LineBreak/>
             <Run/>
         </TextBlock>
-        
+
         <HyperlinkButton Content="START SPINNER"
                          Click="HyperlinkButton_Click"
                          HorizontalAlignment="Left"
